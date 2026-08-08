@@ -62,7 +62,7 @@ header{position:sticky;top:0;background:rgba(255,255,255,.92);backdrop-filter:bl
 .nav-links a:hover,.nav-links a.active{color:var(--navy)}
 
 /* ---------- Hero (home) ---------- */
-.hero{padding:96px 0 72px;text-align:center}
+.hero{padding:96px 20px 72px;text-align:center}
 .hero h1{max-width:820px;margin:0 auto 22px;font-size:56px}
 .hero .sub{font-size:19px;color:var(--muted);max-width:640px;margin:0 auto 34px}
 .hero-ctas{display:flex;gap:14px;justify-content:center;margin-bottom:18px}
