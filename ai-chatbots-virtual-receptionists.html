@@ -39,13 +39,15 @@
 <header>
 <div class="wrap nav">
 <a class='logo' href='/'><img src="assets/logo/mark-navy.svg" alt="Tampa AI Development logo" class="logo-mark">Tampa<span>AI</span>Development</a>
-<nav class="nav-links">
+<nav class="nav-links" onclick="document.body.classList.remove('nav-open')">
 <a class='active' href='/#services'>Services</a>
 <a href='/how-it-works'>How It Works</a>
 <a href='/about'>About</a>
 <a href='/contact'>Contact</a>
+<a class='btn nav-cta' href='/contact'>Free AI Assessment</a>
 </nav>
 <a class='btn' href='/contact'>Free AI Assessment</a>
+<button class="nav-toggle" type="button" aria-label="Menu" aria-expanded="false" onclick="document.body.classList.toggle('nav-open');this.setAttribute('aria-expanded',document.body.classList.contains('nav-open'))"><span></span><span></span><span></span></button>
 </div>
 </header>
 
