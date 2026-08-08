@@ -38,7 +38,7 @@ h3{font-size:19px;font-weight:700;color:var(--navy)}
 .eyebrow{display:inline-block;font-size:13px;font-weight:600;letter-spacing:.06em;text-transform:uppercase;color:var(--accent);background:var(--accent-tint);padding:6px 14px;border-radius:100px;margin-bottom:22px}
 .lede{font-size:19px;color:var(--muted)}
 .prose p{margin-bottom:18px;color:var(--ink);font-size:16.5px}
-.prose h2{margin-top:48px}
+.prose h2{margin-top:56px}
 .prose ul{margin:0 0 18px 22px}
 .prose li{margin-bottom:8px}
 .prose strong{color:var(--navy)}
@@ -81,6 +81,7 @@ header{position:sticky;top:0;background:rgba(255,255,255,.92);backdrop-filter:bl
 
 /* ---------- Sections ---------- */
 section{padding:84px 0}
+section.wrap{padding-top:32px;padding-bottom:32px}
 .sec-head{text-align:center;max-width:640px;margin:0 auto 52px}
 .sec-head p{color:var(--muted);font-size:17px}
 .sec-head-left{max-width:640px;margin-bottom:44px}
