@@ -170,6 +170,26 @@ h2{font-size:29px}
 .steps{padding:44px 28px}
 }
 
+/* ---------- Mobile hamburger menu ---------- */
+.nav-toggle{display:none;background:none;border:0;cursor:pointer;padding:6px;flex-shrink:0}
+.nav-toggle span{display:block;width:22px;height:2.5px;background:var(--navy);margin:5px 0;border-radius:2px;transition:transform .2s ease,opacity .2s ease}
+.nav-links .nav-cta{display:none}
+@media(max-width:860px){
+.nav-toggle{display:block}
+.nav{gap:10px}
+.nav > .btn{margin-left:auto}
+body.nav-open .nav-links{display:flex;flex-direction:column;position:absolute;top:100%;left:0;right:0;background:#fff;border-bottom:1px solid var(--border);box-shadow:0 12px 24px rgba(10,37,64,.10);padding:6px 24px 14px;z-index:20}
+.nav-links a{padding:12px 0;border-bottom:1px solid var(--border);font-size:16px;color:var(--ink)}
+.nav-links a:last-child{border-bottom:0}
+body.nav-open .nav-links a.nav-cta{display:block;color:#fff;text-align:center;border-bottom:0;margin:12px 0 4px;padding:12px 22px}
+body.nav-open .nav-toggle span:nth-child(1){transform:translateY(7.5px) rotate(45deg)}
+body.nav-open .nav-toggle span:nth-child(2){opacity:0}
+body.nav-open .nav-toggle span:nth-child(3){transform:translateY(-7.5px) rotate(-45deg)}
+}
+@media(max-width:560px){
+.nav > .btn{display:none}
+}
+
 /* ---------- Small phones: keep logo and header button apart ---------- */
 @media(max-width:700px){
 .wrap.nav{padding:0 14px}
