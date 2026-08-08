@@ -55,7 +55,9 @@ header{position:sticky;top:0;background:rgba(255,255,255,.92);backdrop-filter:bl
 .nav{display:flex;align-items:center;justify-content:space-between;height:68px}
 .logo{font-weight:800;font-size:19px;color:var(--navy);letter-spacing:-.02em;display:flex;align-items:center;gap:9px}
 .logo-mark{height:30px;width:auto}
-.logo span{color:var(--accent)}
+.logo .logo-ai{color:var(--accent)}
+.logo-text{display:flex;gap:8px}
+.logo-top{display:flex;gap:8px}
 .nav-links{display:flex;gap:28px;font-size:15px;font-weight:500;color:var(--muted)}
 .nav-links a:hover,.nav-links a.active{color:var(--navy)}
 
@@ -187,7 +189,11 @@ body.nav-open .nav-toggle span:nth-child(2){opacity:0}
 body.nav-open .nav-toggle span:nth-child(3){transform:translateY(-7.5px) rotate(-45deg)}
 }
 @media(max-width:560px){
-.nav > .btn{display:none}
+.logo{font-size:13px}
+.logo-mark{height:26px}
+.logo-text{flex-direction:column;gap:1px;line-height:1.15}
+.logo-top{gap:5px}
+.nav > .btn{font-size:12px;padding:7px 10px}
 }
 
 /* ---------- Small phones: keep logo and header button apart ---------- */
